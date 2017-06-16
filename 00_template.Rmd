@@ -107,3 +107,10 @@ Modified from [Kirstie Whitaker](https://github.com/KirstieJane/).
 
 Summarize the main findings of your analyses in the previous four sections here. 
 
+```{r}
+library(PharmPlotter)
+
+ggplot( pharmacoData, aes( viability , group=drug, colour=drug) ) +
+     geom_density(fill="white", lwd=2, alpha=0.1) + xlim(0, 170)
+
+```
